@@ -49,10 +49,11 @@ const Footer = () => {
 
                     </div>
                     <div className="flex justify-between flex-wrap gap-4 p-6 mt-[20px] bg-gray-20 rounded-4xl">
-                        <p className="text-lg text-gray-80 ">
+                        <p className="text-lg text-gray-80 mr-4">
                            &copy; 2024 <span className="text-primary-50">Propertys.AI</span> All rights reserved.
                         </p>
                         <div className="flex items-center gap-4">
+                            <a href="https://github.com/Tushar292004" target="blank" className="footer-link" >Designed By ~ <span className=" footer-link text-primary-50">Tushar</span></a>
                             <a href="" className="footer-link">Privacy Policies</a>
                             <a href="" className="footer-link">Term of Services</a>
                         </div>
