@@ -2,7 +2,7 @@ import {motion} from  "framer-motion";
 import { centerVariants } from "../constants/motion";
 const CTA = () => {
     return (
-        <div className="py-[40px] bg-black">
+        <div className="py-[70px] bg-black">
             <motion.div 
             variants={centerVariants}
             initial="hidden"
