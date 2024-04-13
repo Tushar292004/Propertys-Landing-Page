@@ -69,7 +69,7 @@
     }
 
     .social-icon {
-        @apply p-1.5 bg-gray-30 rounded-full text-white;
+        @apply p-1.5 bg-gray-30 rounded-full text-white hover:text-primary-50;
     }
 
     .footer-heading {

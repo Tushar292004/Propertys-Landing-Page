@@ -12,7 +12,7 @@ const About = () => {
                     <motion.div
                     variants={leftSideVariants}
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
                     viewport={{once: true}}
                     className="flex flex-col gap-y-8 lg:w-[53%] w-auto flex-shrink-0 text-center lg:text-star">
                         <div className="flex flex-col gap-y-4">
@@ -37,7 +37,7 @@ const About = () => {
                     <motion.div 
                     variants={rightSideVariants}
                     initial="hidden"
-                    animate="visible"
+                    whileInView="visible"
                     viewport={{once: true}}
                     className="flex lg:w-[47%] w-full">
                         <div className="lg:max-w-[500px] max-w-none max-h-[450px] w-full rounded-4xl overflow-hidden">

@@ -1,4 +1,4 @@
-import { Header, Footer } from "./components";
+import { Header, Footer, CTA } from "./components";
 import { About, Detail , Hero } from "./sections";
 
 export default function App() {
@@ -8,6 +8,7 @@ export default function App() {
             <Hero />
             <About />
             <Detail />
+            <CTA />
             <Footer />
         </>
     );

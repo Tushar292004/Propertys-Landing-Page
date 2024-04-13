@@ -9,7 +9,7 @@ const Hero = () => {
                     {/* left side */}
                     <motion.div 
                     variants={leftSideVariants}
-                    initial='hidden'
+                    initial="hidden"
                     animate="visible"
                     className="flex flex-col gap-y-8 items-center lg:items-start text-center lg:text-start">
                         <div className="flex flex-col gap-y-4">

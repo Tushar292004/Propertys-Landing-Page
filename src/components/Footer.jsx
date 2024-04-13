@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="flex flex-col">
                     <div className="flex items-start justify-between flex-wrap gap-8">
                         <div className="footer-col">
-                            <h2 className="text-h2 text-white">Proprtys.Ai</h2>
+                            <h2 className="text-h2 text-white hover:text-primary-50">Proprtys.Ai</h2>
                             <p className="text-base !leading-[normal] text-gray-80">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis in quod sapiente dolore fugit nemo nulla excepturi ut eveniet.
                             </p>
@@ -27,7 +27,8 @@ const Footer = () => {
                             </div>
                         </div>
                         
-                            <div className="footer-col">
+                        <div className="flex gap-16">
+                        <div className="footer-col">
                                 <p className="footer-heading text-white">Quick Links</p>
                                 <div className="flex flex-col gap-y-2 text-gray-80">
                                     <a href="#home" className="footer-link">Home</a>
@@ -41,18 +42,18 @@ const Footer = () => {
                                 <div className="flex flex-col gap-y-2 text-gray-80">
                                     <a href="#" className="footer-link">Privacy Policies</a>
                                     <a href="#" className="footer-link">Terms & Conditions</a>
-                                    <a href="#" className="footer-link">Refund Policies</a>
-                                    <a href="#" className="footer-link">Subcriptions</a>
+                                    <a href="#" className="footer-link">Disclosures & Disclaimers</a>
                                 </div>
                             </div>
+                        </div>
                         
 
                     </div>
                     <div className="flex justify-between flex-wrap gap-4 p-6 mt-[20px] bg-gray-20 rounded-4xl">
-                        <p className="text-lg text-gray-80 mr-4">
-                           &copy; 2024 <span className="text-primary-50">Propertys.AI</span> All rights reserved.
+                        <p className="text-lg text-gray-80 mr-4 tracking-wide">
+                           &copy; 2024 <span className="text-primary-50">Propertys.AI </span> All rights reserved.
                         </p>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-10">
                             <a href="https://github.com/Tushar292004" target="blank" className="footer-link" >Designed By ~ <span className=" footer-link text-primary-50">Tushar</span></a>
                             <a href="" className="footer-link">Privacy Policies</a>
                             <a href="" className="footer-link">Term of Services</a>
