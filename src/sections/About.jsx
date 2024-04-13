@@ -1,7 +1,7 @@
 import { aboutFeaturs } from "../constants"
-import {animate, motion} from  'framer-motion'
+import { animate, motion } from 'framer-motion'
 import { hero01, hero02, hero03 } from "../constants/images";
-import {leftSideVariants, rightSideVariants} from "../constants/motion"
+import { leftSideVariants, rightSideVariants } from "../constants/motion"
 
 const About = () => {
     return (
@@ -10,11 +10,11 @@ const About = () => {
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
                     {/* left side */}
                     <motion.div
-                    variants={leftSideVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{once: true}}
-                    className="flex flex-col gap-y-8 lg:w-[53%] w-auto flex-shrink-0 text-center lg:text-star">
+                        variants={leftSideVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="flex flex-col gap-y-8 lg:w-[53%] w-auto flex-shrink-0 text-center lg:text-star">
                         <div className="flex flex-col gap-y-4">
                             <h2 className="relative section-title-after text-h2 text-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing .
@@ -34,12 +34,12 @@ const About = () => {
                         </div>
                     </motion.div>
                     {/* right side */}
-                    <motion.div 
-                    variants={rightSideVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{once: true}}
-                    className="flex lg:w-[47%] w-full">
+                    <motion.div
+                        variants={rightSideVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="flex lg:w-[47%] w-full">
                         <div className="lg:max-w-[500px] max-w-none max-h-[450px] w-full rounded-4xl overflow-hidden">
                             <img src={hero03} alt="about" />
                         </div>
