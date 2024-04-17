@@ -56,14 +56,6 @@
         @apply bg-transparent border border-solid border-white text-white hover:bg-primary-50 hover:text-black hover:border-black;
     }
 
-    .section-title-before {
-        @apply before:content-[url("./assets/heading-left.svg")] before:absolute before:-translate-x-full before:-translate-y-2/4;
-    }
-
-    .section-title-after {
-        @apply after:content-[url("./assets/heading-right.svg")] after:absolute after:-translate-y-1/4;
-    }
-
     .footer-col {
         @apply flex flex-col gap-y-4 basis-[250px];
     }
@@ -160,3 +152,5 @@
     --bg: #f3381d;
     --bg-alpha-35: rgba(242, 57, 28, 0.35);
 }
+
+

@@ -12,14 +12,14 @@ const Header = () => {
         if (resized) setToggleMenu(false)
     }, [resized])
     return (
-        <motion.header
+        <header
             layouts
             variants={navbarVariants}
             initial={["default", { y: -100 }]}
             animate={[scrolled ? "active" : "default", "slide"]}
             transition={{ duration: 0.3 }}
-            className='fixed flex items-center h-[80px] z-[1000] w-full border border-solid border-transparent'>
-            <nav className="container flex items-center justify-between gap-x-16">
+            className='flex items-center h-[80px] z-[1000] w-full border border-solid border-transparent bg-[#1B1B1B]'>
+            <nav className="container flex items-center justify-center gap-x-16">
                 <a href="/" className=" mr-[8vw] text-2xl font-bold text-white">
                     Propertys.Ai
                 </a>
@@ -43,12 +43,12 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <div className={`header__menu-icon flex lg:hidden relative w-5 h-4 flex-shrink-0 cursor-pointer overflow-hidden ${toggleMenu ? "active" : ""}`}
+                {/* <div className={`header__menu-icon flex lg:hidden relative w-5 h-4 flex-shrink-0 cursor-pointer overflow-hidden ${toggleMenu ? "active" : ""}`}
                     onClick={() => setToggleMenu(!toggleMenu)}>
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </div> */}
             </nav>
             {/* Mobile Stuff */}
             <AnimatePresence>
@@ -82,7 +82,7 @@ const Header = () => {
                 )}
             </AnimatePresence>
 
-        </motion.header>
+        </header>
     );
 };
 

@@ -1,13 +1,13 @@
 export const navbarVariants = {
     default: {
         backdropFilter: "blur(0px)",
-        backgroundColor: "rgba(255,255,255,0)",
-        borderBottomColor: "rgba(255,255,255,0)",
+        backgroundColor: "#1B1B1B",
+        borderBottomColor: "#1B1B1B",
     },
     active: {
-        backdropFilter: "blur(25px)",
-        backgroundColor: "rgba(255,255,255,0.01)",
-        borderBottomColor: "rgb(255,255,255)",
+        backdropFilter: "blur(0px)",
+        backgroundColor: "#1B1B1B",
+        borderBottomColor: "#1B1B1B",
     },
     slide: {
         y: 0,
