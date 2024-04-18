@@ -14,23 +14,15 @@ const About = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="flex flex-col gap-y-8 lg:w-[53%] w-auto flex-shrink-0 text-center lg:text-star">
-                        <div className="flex flex-col gap-y-4">
-                            <h2 className="relative section-title-after text-h2 text-white">
-                                Lorem ipsum dolor sit amet consectetur adipisicing .
+                        className="flex flex-col gap-y-8 lg:w-1/2 w-auto flex-shrink-0 text-center lg:text-star">
+                        <div className="flex flex-col gap-y-4 text-start">
+                            <p className="text-gray-80">WHY SUPERNOVA?</p>
+                            <h2 className="relative text-[3.5rem] font-bold leading-[3.25rem] w-full text-white">
+                            Quality schools out of reach for 250M Indian Children.
                             </h2>
-                            <p className="text-base font-medium text-white">
+                            <p className="text-bold font-lg text-gray-80">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt incidunt quia non vitae voluptates, adipisci sit dolore quisquam eos repudiandae laborum culpa minima beatae velit ut! Magni, asperiores deserunt?
                             </p>
-                        </div>
-                        <div className="flex flex-wrap justify-center gap-4">
-                            {aboutFeaturs.map((feature) => (
-                                <div key={feature.title} className="group flex flex-col basis-[240px] flex-grow border border-solid border-white rounded-3xl  bg-[#2a2a2a] p-4 text-start hover:bg-primary-50 transition-colors duration-300">
-                                    <p className="text-xl font-semibold text-white !leading-[normal] group-hover:text-black">
-                                        {feature.title}
-                                    </p>
-                                    <p className="text-base font-medium text-white leading=[normal] group-hover:text-gray-10">{feature.description}</p>
-                                </div>))}
                         </div>
                     </motion.div>
                     {/* right side */}
@@ -39,9 +31,9 @@ const About = () => {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true }}
-                        className="flex lg:w-[47%] w-full">
-                        <div className="lg:max-w-[500px] max-w-none max-h-[450px] w-full rounded-4xl overflow-hidden">
-                            <img src={hero03} alt="about" />
+                        className="flex lg:w-1/2 w-full">
+                        <div className="">
+
                         </div>
                     </motion.div>
                 </div>
