@@ -49,7 +49,7 @@ const About = () => {
                         </div>
                     </motion.div>
                     {/* bottom side */}
-                    <div className="w-[70vw] h-[70vh] mt-16 mb-[16vh] text-center">
+                    <div className="w-[70vw] h-[30vh] md:h-[70vh] mt-16 mb-[16vh] text-center">
                         <p className="text-white mb-8 font-medium">Here's A Sneak Peek Into The Future</p>
                         <img src={hero01} alt="" className="rounded-md" />
                     </div>
