@@ -16,6 +16,10 @@ export default {
           lato: ["Lato", "sans-serif"],
       },
       extend: {
+        rotate: {
+            '5': '5deg',
+          }
+          ,
           fontSize: {
               h1: [
                   "clamp(2.25rem, 4vw, 3.375rem)",

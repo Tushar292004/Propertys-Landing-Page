@@ -157,3 +157,19 @@
     --bg: #f3381d;
     --bg-alpha-35: rgba(242, 57, 28, 0.35);
 }
+
+
+.animate-left {
+    animation: slideInLeft 10s infinite linear ;
+  }
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(0%) ;
+    }
+    100% {
+        transform: translateX(-50%) ;
+    }
+  }
+  
+  
