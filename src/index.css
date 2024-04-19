@@ -62,7 +62,7 @@
     }
 
     .footer-col {
-        @apply flex flex-col gap-y-4 basis-[250px];
+        @apply flex flex-col gap-y-4 basis-[200px];
     }
 
     .social-icon {

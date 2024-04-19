@@ -1,5 +1,8 @@
 import {motion} from  "framer-motion";
 import { centerVariants } from "../constants/motion";
+import { contactUs } from "../constants/images";
+import {FaAngleRight} from "react-icons/fa6";
+
 const CTA = () => {
     return (
         <div className="py-[70px] bg-black">
@@ -9,38 +12,15 @@ const CTA = () => {
             whileInView="visible"
             viewport={{margin:'0px 0px -200px 0px', once:true}}
             className="container h-[400px]">
-                <div className="flex flex-col justify-center items-center gap-y-8 w-full h-full px-4 rounded-4xl border border-solid border-gray-60
-                bg-[url('/src/assets/cta-bg.png')]">
-                    <h3 className="relative section-title-after mt-6 text-h2 text-gray-10">
-                        Contact Us For More Information
-                    </h3>
-                    <form className="w-full max-w-[550px]">
-                        <div className="flex mb-4 items-center border border-solid border-gray-10 rounded-full h-14 p-1.5 overflow-hidden" >
-                            <input type="text" name='name' id='name' autoComplete="off"
-                                className="outline-0 bg-transparent px-4 w-full text-base placeholder:text-gray-40"
-                                placeholder="Your Full Name" />
-                        </div>
-                        <div className="flex mb-4 items-center border border-solid border-gray-10 rounded-full h-14 p-1.5 overflow-hidden">
-                            <input type="email" name='email' id='email' autoComplete="off"
-                                className="outline-0 bg-transparent px-4 w-full text-base placeholder:text-gray-40"
-                                placeholder="Enter Your Email" />
-                        </div>
-                        <div className="flex mb-4 items-center border border-solid border-gray-10 rounded-full h-14 p-1.5 overflow-hidden">
-                            <input type="tel" name='phone' id='phone' autoComplete="off"
-                                className="outline-0 bg-transparent px-4 w-full text-base placeholder:text-gray-40"
-                                placeholder="Enter Your Number" />
-                        </div>
-
-
-                        <div className="flex mb-4 items-center  justify-center  rounded-full h-14 p-1.5 overflow-hidden">
-                            <button className="flex items-center justify-center flex-shrink-0 border border-solid border-gray-10 p-4 h-11 hover:bg-primary-10/30 rounded-full font-semibold text-[1.2rem]">
-                                Submit
-                                <svg  className="ml-2 font-semibold" width="25" height="25" viewBox="0 0 71 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.612732 25.4016H64.4928M38.4571 1.9472C43.2016 10.3343 51.0356 19.7372 64.4928 25.4472C51.0356 31.1572 43.2016 40.5601 38.4571 48.9472" stroke="#292C32" stroke-width="4.5" />
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+                <div className="flex flex-row justify-evenly items-center gap-y-8 w-full h-full rounded-xl bg-[#6823EB] pt-[4vh]">
+                    <div className="text-white w-[30%]">
+                        <h1 className="text-[2rem] font-bold my-2">Get in Touch!</h1>
+                        <p className="text-[1.5rem] my-2">Interested in joining our AI Spoken English course? </p>
+                        <button className="text-[1.2rem] flex items-center font-semibold bg-[#FF0062] rounded-lg p-[20px] my-[6vh] hover:bg-[#4400C3] transition-all duration-300 ease-in-out">Whatsapp Us <FaAngleRight className="ml-4 text-[1.2rem]"/></button>
+                    </div>
+                    <div className="w-[40%] h-[100%]">
+                        <img src={contactUs} alt="" className="w-[80%]" />
+                    </div>
                 </div>
             </motion.div>
         </div>

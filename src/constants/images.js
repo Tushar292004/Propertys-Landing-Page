@@ -11,6 +11,7 @@ import roundedText from "../assets/rounded-text.svg";
 import logoSvg from "../assets/download.png"
 import playStore from "../assets/palystore.png"
 import appleStore from "../assets/applestore.png"
+import contactUs from "../assets/Contactus.png"
 
 export {
     hero1,
@@ -25,5 +26,6 @@ export {
     arrowLeft,
     arrowLeftUp,
     roundedText,
-    logoSvg
+    logoSvg,
+    contactUs
 };

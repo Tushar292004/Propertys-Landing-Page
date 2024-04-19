@@ -49,10 +49,15 @@ const About = () => {
                         </div>
                     </motion.div>
                     {/* bottom side */}
-                    <div className="w-[70vw] h-[30vh] md:h-[70vh] mt-16 mb-[16vh] text-center">
+                    <motion.div
+                        variants={leftSideVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        className="w-[70vw] h-[30vh] md:h-[70vh] mt-16 mb-[16vh] text-center">
                         <p className="text-white mb-8 font-medium">Here's A Sneak Peek Into The Future</p>
                         <img src={hero01} alt="" className="rounded-md" />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             {/* Left - to right slider */}
