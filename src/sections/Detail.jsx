@@ -1,53 +1,42 @@
 import React from 'react'
-import { aboutFeaturs } from "../constants"
+import{useState} from 'react';
+import { faqContent } from "../constants"
 import { hero01, hero02, hero03 } from "../constants/images";
-import {motion} from  "framer-motion" 
-import { leftSideVariants, rightSideVariants }   from '../constants/motion';
-function Detail() {
-    return (
-            <section id="detail" className="bg-black">
-                <div className="container">
-                    <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-8">
-                        {/* left */}
-                        <motion.div
-                        variants={leftSideVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true}}
-                        className="flex lg:w-[47%] w-full">
-                            <div className="lg:max-w-[500px] max-w-none max-h-[450px] w-full rounded-4xl overflow-hidden">
-                                <img src={hero02} alt="about" />
-                            </div>
-                        </motion.div>
+import { motion } from "framer-motion"
+import { leftSideVariants, rightSideVariants } from '../constants/motion';
+import { FaAngleDown } from 'react-icons/fa6'
 
-                        {/* right */}
-                        <motion.div
-                        variants={rightSideVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true}}
-                        className="flex flex-col gap-y-8 lg:w-[53%] w-auto flex-shrink-0 text-center lg:text-star">
-                            <div className="flex flex-col gap-y-4">
-                                <h2 className="relative section-title-after text-h2 text-white">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing .
-                                </h2>
-                                <p className="text-base font-medium text-white">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deserunt incidunt quia non vitae voluptates, adipisci sit dolore quisquam eos repudiandae laborum culpa minima beatae velit ut! Magni, asperiores deserunt?
-                                </p>
-                            </div>
-                            <div className="flex flex-wrap justify-center gap-4">
-                                {aboutFeaturs.map((feature) => (
-                                    <div key={feature.title} className="group flex flex-col basis-[240px] flex-grow border border-solid border-white rounded-3xl  bg-[#bdcb59] p-4 text-start hover:bg-[#2a2a2a] transition-colors duration-300">
-                                        <p className="text-xl font-semibold text-black !leading-[normal] group-hover:text-white">
-                                            {feature.title}
-                                        </p>
-                                        <p className="text-base font-medium text-gray-10 leading=[normal] group-hover:text-white">{feature.description}</p>
-                                    </div>))}
-                            </div>
-                        </motion.div>
-                    </div>
+function Detail() {
+    const [expandedState, setExpandedState] = useState({});
+
+  const toggleContent = (title) => {
+    setExpandedState((prevState) => ({
+      ...prevState,
+      [title]: !prevState[title],
+    }));
+  };
+
+    return (
+        <section id="detail" className="bg-black">
+            <div className="container flex flex-col md:flex-row  md:w-[100%] w-[80%]">
+                {/* left side */}
+                <div className="text-white text-[2.5rem] font-bold md:w-[30%] md:text-start text-center">
+                    Frequently Asked Questions 🤔
                 </div>
-            </section>
+                {/* right side */}
+                <div className="flex md:ml-[2vh] md:w-[70%] flex-col">
+                    {faqContent.map((content) => (
+                        <div className='border-b-2 border-b-gray-20 py-[4vh]'>
+                            <div className="flex w-full justify-between cursor-pointer " onClick={() => toggleContent(content.title)}>
+                                <h1 key={content.title} className='text-white text-[2rem]'>{content.title}</h1>
+                                <FaAngleDown className={`text-white text-[2rem] transform transition-transform duration-300 ease-in-out ${expandedState[content.title] ? 'rotate-180' : ''}`} />
+                            </div>
+                            {expandedState[content.title] && <div className='text-[#ffffff80] text-[1.5rem] transition-all duration-300 ease-in-out'>{content.description}</div>}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     )
 }
 

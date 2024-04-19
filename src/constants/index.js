@@ -37,3 +37,30 @@ export const aboutFeaturs = [
     },
 ];
 
+export const faqContent = [
+    {
+        title:"Who is this course for?",
+        description: "When you join the Supernova AI Spoken English Course, you will be provided with premium access to Supernova Speak & Learn English app and a personal mentor.",
+    },
+    {
+        title:"How is the course structured?",
+        description: "When you join the Supernova AI Spoken English Course, you will be provided with premium access to Supernova Speak & Learn English app and a personal mentor.",
+    },
+    {
+        title:"What is the course fees?",
+        description: "When you join the Supernova AI Spoken English Course, you will be provided with premium access to Supernova Speak & Learn English app and a personal mentor.",
+    },
+    {
+        title:"What is the course duration?",
+        description: "When you join the Supernova AI Spoken English Course, you will be provided with premium access to Supernova Speak & Learn English app and a personal mentor.",
+    },
+    {
+        title:"Are there any requirements course?",
+        description: "When you join the Supernova AI Spoken English Course, you will be provided with premium access to Supernova Speak & Learn English app and a personal mentor.",
+    },
+    {
+        title:"Can parents know about  progress?",
+        description: "When you join the Supernova AI Spoken English Course, you will be provided with premium access to Supernova Speak & Learn English app and a personal mentor.",
+    },
+
+]
